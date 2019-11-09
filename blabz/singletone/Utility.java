@@ -2,6 +2,7 @@ package com.blabz.singletone;
 
 public class Utility
 {
+	@SuppressWarnings("static-access")
 	public static void main(String[] args)
 	{
 		EagerInitialization eager1 = EagerInitialization.getInstance();
@@ -43,8 +44,12 @@ public class Utility
 		System.out.println("billPughSingleton"+billPughSingleton.hashCode());
 		System.out.println("billPughSingleton2"+billPughSingleton2.hashCode());
 		
+		EnumSingletone enumSingletone = EnumSingletone.INSTANCE;
+		EnumSingletone enumSingletone2 = EnumSingletone.INSTANCE;
 		
-		
+		System.out.println("enumsingletone" + enumSingletone.hashCode());
+		System.out.println("enumsingletone" + enumSingletone2.hashCode());
+
 	}
 
 }
