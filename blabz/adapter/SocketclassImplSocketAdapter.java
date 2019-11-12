@@ -1,7 +1,6 @@
 package com.blabz.adapter;
 
-public class SocketclassImplSocketAdapter extends Socket implements SocketAdapter
-{
+public class SocketclassImplSocketAdapter extends Socket implements SocketAdapter {
 
 	@Override
 	public Volt get120Volt() {
@@ -11,22 +10,21 @@ public class SocketclassImplSocketAdapter extends Socket implements SocketAdapte
 
 	@Override
 	public Volt get12Volt() {
-		Volt v= getVolt();
-		return convertVolt(v,10);
-		
-		
+		Volt v = getVolt();
+		return convertVolt(v, 10);
+
 	}
 
 	private Volt convertVolt(Volt v, int i) {
 		// TODO Auto-generated method stub
-		return new Volt(v.getVolts()/i);
+		return new Volt(v.getVolts() / i);
 	}
 
 	@Override
 	public Volt get3Volt() {
 		// TODO Auto-generated method stub
-		Volt v =getVolt();
-		
+		Volt v = getVolt();
+
 		return convertVolt(v, 40);
 	}
 

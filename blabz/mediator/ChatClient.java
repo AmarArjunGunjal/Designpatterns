@@ -1,7 +1,6 @@
 package com.blabz.mediator;
 
-public class ChatClient
-{
+public class ChatClient {
 	public static void main(String[] args) {
 		ChatMediator mediator = new ChatMediatorImpl();
 		User user1 = new UserImpl(mediator, "Pankaj");
@@ -12,8 +11,8 @@ public class ChatClient
 		mediator.addUser(user2);
 		mediator.addUser(user3);
 		mediator.addUser(user4);
-		
+
 		user1.send("Hi All");
-		
+
 	}
 }

@@ -1,11 +1,10 @@
 package com.blabz.adapter;
 
-public class Volt
-{
-private int volts;
-	
-	public Volt(int v){
-		this.volts=v;
+public class Volt {
+	private int volts;
+
+	public Volt(int v) {
+		this.volts = v;
 	}
 
 	public int getVolts() {
