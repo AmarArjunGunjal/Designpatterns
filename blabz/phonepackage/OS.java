@@ -1,6 +1,5 @@
 package com.blabz.phonepackage;
 
-public interface OS 
-{
+public interface OS {
 	void spec();
 }

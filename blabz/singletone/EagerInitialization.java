@@ -1,7 +1,6 @@
 package com.blabz.singletone;
 
-public class EagerInitialization
-{
+public class EagerInitialization {
 	private static final EagerInitialization instance = new EagerInitialization();
 
 	// private constructor to avoid client applications to use constructor

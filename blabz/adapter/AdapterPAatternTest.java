@@ -2,12 +2,13 @@ package com.blabz.adapter;
 
 public class AdapterPAatternTest {
 	public static void main(String[] args) {
-
+		//method calling
 		testClassAdapter();
 		testObjectAdapter();
 	}
 
 	private static void testObjectAdapter() {
+		//create object of interface class
 		SocketAdapter sockAdapter = new SocketObjectAdapter();
 		Volt v3 = getVolt(sockAdapter, 3);
 		Volt v12 = getVolt(sockAdapter, 12);

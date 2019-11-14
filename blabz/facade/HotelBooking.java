@@ -1,7 +1,6 @@
 package com.blabz.facade;
 
-public class HotelBooking implements HotelBookingImpl
-{
+public class HotelBooking implements HotelBookingImpl {
 
 	@Override
 	public void book() {

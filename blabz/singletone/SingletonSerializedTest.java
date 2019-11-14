@@ -8,23 +8,21 @@ import java.io.ObjectInputStream;
 
 public class SingletonSerializedTest {
 
-	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException{
+	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 		SerializedSingletone instanceOne = SerializedSingletone.getInstance();
-		ObjectInput out = new ObjectInputStream(new FileInputStream(
-                "filename.ser"));
-	                
-	       // out.writeObject(instanceOne);
-	        out.close();
-	        
-	        //deserailize from file to object
-	        ObjectInput in = new ObjectInputStream(new FileInputStream(
-	                "filename.ser"));
-	        SerializedSingletone instanceTwo = (SerializedSingletone) in.readObject();
-	        in.close();
-	        
-	        System.out.println("instanceOne hashCode="+instanceOne.hashCode());
-	        System.out.println("instanceTwo hashCode="+instanceTwo.hashCode());
-	        
-	    }
+		ObjectInput out = new ObjectInputStream(new FileInputStream("filename.ser"));
+
+		// out.writeObject(instanceOne);
+		out.close();
+
+		// deserailize from file to object
+		ObjectInput in = new ObjectInputStream(new FileInputStream("filename.ser"));
+		SerializedSingletone instanceTwo = (SerializedSingletone) in.readObject();
+		in.close();
+
+		System.out.println("instanceOne hashCode=" + instanceOne.hashCode());
+		System.out.println("instanceTwo hashCode=" + instanceTwo.hashCode());
+
+	}
 
 }

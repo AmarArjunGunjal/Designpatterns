@@ -1,7 +1,6 @@
 package com.blabz.singletone;
 
-public enum EnumSingletone 
-{
+public enum EnumSingletone {
 	INSTANCE;
-	
+
 }

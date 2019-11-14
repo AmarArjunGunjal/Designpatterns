@@ -1,7 +1,6 @@
 package com.blabz.facade;
 
-public class TransferBooking implements TransferBookingImpl
-{
+public class TransferBooking implements TransferBookingImpl {
 
 	@Override
 	public void book() {
